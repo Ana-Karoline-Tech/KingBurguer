@@ -1,0 +1,52 @@
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-primary-red);
+  cursor: pointer;
+  justify-self: end;
+}
+
+.menu-toggle .icon-close {
+  display: none;
+}
+
+.menu-toggle .material-symbols-outlined {
+  font-size: 32px;
+}
+
+/* Garante que a fonte Material Symbols seja aplicada corretamente */
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit; /* Mantém o tamanho definido por outras regras, como no .menu-toggle */
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 3. MOBILE DRAWER */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 150;
+}
+
+.menu-overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+}

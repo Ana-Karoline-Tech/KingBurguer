@@ -1,0 +1,48 @@
+@media (max-width: 1023px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--color-nav-bg);
+    flex-direction: column;
+    padding: 120px 40px;
+    gap: 24px;
+    transition: var(--transition);
+    z-index: 300;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    justify-self: initial;
+    transform: translateX(100%);
+  }
+
+  .nav-links.is-active {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+
+  .menu-toggle[aria-expanded="true"] {
+    position: relative;
+    z-index: 201;
+  }
+
+  /* Troca de ícones baseada no estado do botão */
+  .menu-toggle[aria-expanded="true"] .icon-menu {
+    display: none;
+  }
+  .menu-toggle[aria-expanded="true"] .icon-close {
+    display: block;
+  }
+}
