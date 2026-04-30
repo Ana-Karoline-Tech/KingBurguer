@@ -14,7 +14,7 @@
     />
     <link
       rel="stylesheet"
-      17 +   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"  
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
 
     <link rel="icon" type="image/png" href="public/images/talher-navbar-log.png">
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/navbar-principal.css" />
     <link rel="stylesheet" href="css/menu-toggle.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
+    <link rel="stylesheet" href="css/hero.css" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
@@ -53,7 +54,7 @@
 
         <button
           class="menu-toggle"
-          type="button"     
+          type="button"
           data-menu-toggle
           aria-expanded="false"
           aria-label="Abrir menu"
@@ -71,6 +72,37 @@
       </nav>
     </header>
 
-    <main id="main-content"></main>
+    <main id="main-content">
+      <!-- 3. HERO SECTION - KB NINJA -->
+      <section class="hero-ninja" id="home">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <span class="badge-promo">NOVA PROMOÇÃO</span>
+            <h1 class="hero-title">
+              <span class="text-green">KB NINJA</span>
+              <span class="text-white">CHEGOU!</span>
+            </h1>
+            <p class="hero-subtitle">
+              Nosso novo combo especial com brinde exclusivo das
+              <span class="text-green">Tartarugas Ninja</span>!
+            </p>
+            <a href="#menu" class="btn-cta">Quero Meu Combo!</a>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="public/images/hero-burguer-gif.gif"
+              alt="Hambúrguer KB Ninja com coroa"
+              class="floating-burger"
+            />
+          </div>
+        </div>
+
+        <div class="hero-footer">
+          <p>Confira mais</p>
+          <span class="material-symbols-outlined">expand_more</span>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
