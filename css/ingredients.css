@@ -1,0 +1,109 @@
+﻿/* SECTION: INGREDIENTES PREMIUM */
+.ingredients-premium {
+  background-color: #ede8df;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.ingredients-premium__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ingredients-premium__header {
+  margin-bottom: 60px;
+}
+
+.ingredients-premium__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: #502314;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.ingredients-premium__subtitle {
+  font-size: 1.1rem;
+  color: #502314;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.ingredients-premium__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.ingredients-card {
+  height: 100%;
+  padding: 40px 20px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.ingredients-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.ingredients-card__icon-wrap {
+  margin-bottom: 20px;
+}
+
+.ingredients-card__icon {
+  width: 60px;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.ingredients-card__title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.ingredients-card__description {
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.ingredients-card--meat { background-color: #b22222; }
+.ingredients-card--bacon { background-color: #a0522d; }
+.ingredients-card--cheese { background-color: #daa520; }
+.ingredients-card--bread { background-color: #f4a460; }
+.ingredients-card--lettuce { background-color: #228b22; }
+.ingredients-card--tomato { background-color: #d32f2f; }
+
+@media (max-width: 1024px) {
+  .ingredients-premium__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ingredients-premium__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .ingredients-card {
+    padding: 30px 15px;
+  }
+  .ingredients-card__title {
+    font-size: 1rem;
+  }
+}
