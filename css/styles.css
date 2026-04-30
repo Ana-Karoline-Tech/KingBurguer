@@ -106,8 +106,8 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--color-text-dark);
-  font-weight: 700;
+  color: var(--color-primary-brown);
+  font-weight: 800;
   font-size: 0.9rem;
   text-transform: uppercase;
   transition: color var(--transition);
