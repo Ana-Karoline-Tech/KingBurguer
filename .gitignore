@@ -1,0 +1,13 @@
+# Extensões e configurações de IDE
+.vscode/
+.google/
+
+# Logs e arquivos do sistema
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente/segredos
+.env
+*.json
+!package.json
