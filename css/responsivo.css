@@ -78,3 +78,50 @@
     min-height: auto;
   }
 }
+
+/* Promo Dobro */
+@media (max-width: 1100px) {
+  .promo-dobro {
+    height: auto;
+    padding: 80px 0;
+  }
+  .promo-dobro::before {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .promo-dobro__container {
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+  }
+  .promo-dobro__burgers {
+    justify-content: center;
+  }
+  .promo-dobro__price {
+    justify-content: center;
+  }
+  .promo-dobro__starting {
+    margin-left: 0;
+  }
+  .promo-dobro__disclaimer {
+    margin: 0 auto;
+  }
+  .promo-dobro__card {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-dobro__burgers .number { font-size: 6rem; }
+  .promo-dobro__burgers .text { font-size: 2rem; }
+  .promo-dobro__price .integer { font-size: 6rem; }
+  .promo-dobro__price .decimal { font-size: 2rem; }
+  .promo-dobro__price .currency { font-size: 1.5rem; }
+  .promo-dobro__options {
+    gap: 10px;
+  }
+  .promo-dobro__option p {
+    font-size: 0.55rem;
+  }
+}
+
