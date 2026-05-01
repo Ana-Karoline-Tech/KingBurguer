@@ -1,0 +1,173 @@
+﻿/* SECTION: HMMMM NUGGETS */
+.hmmmm-nuggets {
+  background: radial-gradient(circle at center, #d62300 0%, #502314 100%);
+  padding: 100px 0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Partículas sutis de brilho (opcional, simulando o efeito do print) */
+.hmmmm-nuggets::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.hmmmm-nuggets__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hmmmm-nuggets__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hmmmm-nuggets__title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 5.5rem);
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin-bottom: 10px;
+}
+
+.hmmmm-nuggets__subtitle {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 800;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hmmmm-nuggets__body {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.hmmmm-nuggets__media {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hmmmm-nuggets__media img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.hmmmm-nuggets__content {
+  flex: 1.2;
+}
+
+.hmmmm-nuggets__product-name {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #f5c518; /* Amarelo/Dourado do print */
+  margin-bottom: 20px;
+}
+
+.hmmmm-nuggets__description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  opacity: 0.9;
+  max-width: 550px;
+}
+
+.hmmmm-nuggets__badges {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.hmmmm-badge {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hmmmm-badge:hover {
+  transform: translateY(-5px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hmmmm-badge__icon {
+  width: 35px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.hmmmm-badge__title {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.hmmmm-badge__text {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .hmmmm-nuggets__body {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hmmmm-nuggets__description {
+    margin-inline: auto;
+  }
+
+  .hmmmm-nuggets__badges {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hmmmm-badge {
+    width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hmmmm-nuggets {
+    padding: 60px 0;
+  }
+
+  .hmmmm-nuggets__badges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hmmmm-badge {
+    width: 100%;
+    max-width: 280px;
+  }
+}
